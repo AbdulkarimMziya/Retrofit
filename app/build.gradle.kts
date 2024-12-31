@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace = "com.example.retrofit"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.example.retrofit"
@@ -51,20 +51,20 @@ dependencies {
 
 
     // Retrofit Dependency
-    val retrofit_version = "2.11.0"
+    val retrofit_version = "2.9.0"
     implementation("com.squareup.retrofit2:retrofit:$retrofit_version")
     implementation("com.squareup.retrofit2:converter-gson:$retrofit_version")
-    implementation("com.squareup.okhttp3:okhttp: 4.12.0")
+    implementation("com.squareup.okhttp3:okhttp:4.12.0")
 
     // Coroutines
-    val coroutine_version = "1.15.0"
+    val coroutine_version = "1.7.3"
     implementation("androidx.core:core-ktx:$coroutine_version")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:$coroutine_version")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:$coroutine_version")
 
 
     // Life Cycle Arch
-    val lifecycleVersion = "2.8.7"
+    val lifecycleVersion = "2.8.6"
     // ViewModel
     implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycleVersion")
     // LiveData
